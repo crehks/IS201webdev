@@ -65,6 +65,49 @@
             border-top: 2px solid #333;
             overflow: hidden;
         }
+        #gameArea {
+            position: relative;
+            flex: 1;
+            width: 90%;
+            border-top: 2px solid #333;
+            overflow: hidden;
+        }
+/*The audio file doesnt play unless the page is interacted with first.
+This code is used to make a button like the back button so the user must interact to hear the audio*/
+        #startScreen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        #startButton {
+            padding: 20px 40px;
+            font-size: 1.5em;
+            background-color: #ff1e1e;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s;
+        }
+
+        #startButton:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+        }
+
+        .hidden {
+            display: none;
+        }
 /* sizing and positioning for the f1 image*/
         #f1car {
             position: absolute;
@@ -129,4 +172,5 @@
 </body>
 
 </html>
+
 
